@@ -1,14 +1,32 @@
 # Post in Webex Teams space(s) the user list to help Admins/IT track user onboarding
 
-This script allows the admin of a Webex Teams org to export the list of users belonging to the org with the 'Status' information and to have the report automatically posted in one or more Webex Teams spaces via a BOT.
+This script allows the admin(s) of a Webex Teams Org to export the list of users belonging to the org with the 'Status' information and to have the report automatically posted in one or more Webex Teams spaces via a BOT.
 
 The 'Status' property of users, as shown in Control Hub, has two values (as shown in the example):
 
 - **Active**: the user has logged into Webex Teams at least once.
 - **Invite Pending**: the user hasn't yet signed into Webex Teams.
 
+
 ![Screenshot 2019-04-26 at 16 33 39](https://user-images.githubusercontent.com/47174761/56818428-e4acb000-6847-11e9-9e6c-603b1dc25300.png)
 (Example from Control Hub)
+
+The script provides an easy way to collect the info about either all the users or just the active ones or the pending ones by having a report collected and automatically posted in Webex Teams.
+
+The report is provided in the form of a .CSV file with the following fields:
+
+- **First name**
+- **Last name**
+- **Display name**
+- **Email**
+- **Invite pending (status)**: TRUE/FALSE
+
+
+
+
+
+
+
 
 
 
