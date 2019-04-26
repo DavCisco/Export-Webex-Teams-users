@@ -7,10 +7,12 @@ The Status field
 The 
 
 
+
+
 Export the list of the Webex Teams users in a given org with the primary goal of tracking the adoption i.e. the user account status
 
 # Requirements
-- **WebexTeamsSDK** available here: https://github.com/CiscoDevNet/webexteamssdk (documentation: https://webexteamssdk.readthedocs.io/en/latest/user/quickstart.html)
+- **WebexTeamsSDK** available here: https://github.com/CiscoDevNet/webexteamssdk
 - **Python 3** - tested with Python 3.7.3 on MacOS 10.14.4
 
 
