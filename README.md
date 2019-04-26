@@ -2,6 +2,8 @@
 
 This script allows the admin(s) of a Webex Teams Org to export the list of users belonging to the org with the 'Status' information and to have the report automatically posted in one or more Webex Teams spaces via a BOT.
 
+![Screenshot 2019-04-26 at 18 19 14](https://user-images.githubusercontent.com/47174761/56821910-de223680-684f-11e9-809b-c7544a531c26.png)
+
 The 'Status' property of users, as shown in Control Hub, has two values (as shown in the example):
 
 - **Active**: the user has logged into Webex Teams at least once.
