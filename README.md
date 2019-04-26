@@ -4,7 +4,7 @@ This script allows you as admin of a Webex Teams Org to export the full list of 
 
 The Status field 
 
-The 
+https://user-images.githubusercontent.com/47174761/56813076-89c18b80-683c-11e9-9c5f-6e735e55b5b9.jpg
 
 
 
