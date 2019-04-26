@@ -7,21 +7,19 @@ The 'Status' property of users, as shown in Control Hub, has two values (as show
 - **Active**: the user has logged into Webex Teams at least once.
 - **Invite Pending**: the user hasn't yet signed into Webex Teams.
 
+![Screenshot 2019-04-26 at 16 33 39](https://user-images.githubusercontent.com/47174761/56818428-e4acb000-6847-11e9-9e6c-603b1dc25300.png)
+(Example from Control Hub)
 
 
 
 This script allows you as admin of a Webex Teams Org to export the full list of your users in order to track the "Status" of each and every user account.
-
-The Status field 
-
-![Screenshot 2019-04-26 at 15 52 52 copy](https://user-images.githubusercontent.com/47174761/56814370-5a604e00-683f-11e9-87ed-587248a0a7a2.jpg)
 
 
 
 Export the list of the Webex Teams users in a given org with the primary goal of tracking the adoption i.e. the user account status
 
 # Requirements
-- **WebexTeamsSDK** available here: https://github.com/CiscoDevNet/webexteamssdk
+- **WebexTeamsSDK** - available here: https://github.com/CiscoDevNet/webexteamssdk
 - **Python 3** - tested with Python 3.7.3 on MacOS 10.14.4
 
 
