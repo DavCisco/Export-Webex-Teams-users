@@ -1,4 +1,14 @@
-# Export Webex Teams users
+# Post in Webex Teams space(s) the user list to help Admins/IT track user onboarding
+
+This script allows the admin of a Webex Teams org to export the list of users belonging to the org with the 'Status' information and to have the report automatically posted in one or more Webex Teams spaces via a BOT.
+
+The 'Status' property of users, as shown in Control Hub, has two values (as shown in the example):
+
+- **Active**: the user has logged into Webex Teams at least once.
+- **Invite Pending**: the user hasn't yet signed into Webex Teams.
+
+
+
 
 This script allows you as admin of a Webex Teams Org to export the full list of your users in order to track the "Status" of each and every user account.
 
