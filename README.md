@@ -4,8 +4,7 @@ This script allows you as admin of a Webex Teams Org to export the full list of 
 
 The Status field 
 
-# pending (https://user-images.githubusercontent.com/47174761/56813076-89c18b80-683c-11e9-9c5f-6e735e55b5b9.jpg)
-
+![Screenshot 2019-04-26 at 15 52 52 copy](https://user-images.githubusercontent.com/47174761/56814370-5a604e00-683f-11e9-87ed-587248a0a7a2.jpg)
 
 
 
