@@ -33,82 +33,41 @@ The report is provided in the form of a .CSV file with the following fields:
 
 # How to use
 
-After having installed the WebexTeamsSDK library you're ready to execute the script with Python3
+After having installed the WebexTeamsSDK library you're ready to execute the script with Python3 in a Terminal window:
 
-- **python3 ListUsers_v2.0.py**
+- **$python3 ListUsers_v2.0.py**
 
 The settings for the script are managed via a configuration file (ListUsers_config.ini) that gets created automatically at the very first execution of the script. Customize the .ini file and re-run the script.
 
 The configuration file requires the following settings:
 
-1. **Org ID**
+- 1. **Org ID**
 
 The ID of the Webex Teams Org under consideration. The ID can be obtained from https://developer.webex.com/. 		After login run the **List Room** API (https://developer.webex.com/docs/api/v1/rooms/list-rooms). In the response take the "id" field.
 
-2. **Admin Access Token**
+- 2. **Admin Access Token**
 
 The access token of the admin account for the Webex Teams Org. The token can as well be obtained from the developer portal, after login, clicking on the bearer in the header of any API call. Note: for security reasons the access token expires after 12 hours from login so please make sure you get a fresh token for the configuration file.
 
-3. **Search mode**
+- 3. **Search mode**
 
 The script allows to export all the users (option A, default), the active users only (option C) or pending users only (option P).
 
-4. **Post to Teams**
+- 4. **Post to Teams**
 
 This setting [yes/no] control how the export file is returned. Selecting "yes" the .CSV file is posted in all the spaces where a BOT (defined in the next setting) has been added into. The .CSV file is also stored in the local folder where the script is located.
 If "no" is selected (default) the export file gets saved on the computer's desktop.
 
-5. **BOT access token**
+- 5. **BOT access token**
 
 The token associated to the Webex Teams BOT that will be used to post the message in the spaces where the BOT has been invited to.
-The BOT 
+The BOT must be created from this page: https://developer.webex.com/my-apps/new. Two parameters should be noted: the **username (name@webex.bot)** and the **access token**. Given the security of the BOT framework, the access token does not expire quickly so can be added into the .ini file just once. However, remember to add the BOT to all the spaces where you want the report to get posted. With this done, the script will automatically retrieve the list of spaces where the BOT belongs to and will post the report together with date & summary in all of them.
 
 
+After having properly set the .ini file according to what just described you can re-run the script. In case of invalid or missing parameters an error message will be generated in the terminal. 
 
+# Notes:
 
+1. The Webex APIs implement rate-limiting; for more than 5k users the script may hit the rate-limiting that however is fully managed by the WebexTeamsSdk library; it can take about 2 mins for the script to complete, just wait! :-)
 
-
-
-# Configure script
-1. **Set your personal access token**
-	- `myToken=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
-	- enter your Personal Access token here. You can find it in https://developer.ciscospark.com, login, click your name (top right)
-2. **Set your room ID**
-	- `myRoom=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
-	- get your room ID from the Spark for Developers page, under Rooms / List rooms
-3. **Enter the path to your spreadsheet**
-	- myworkbook = /Users/myname/Documents/SparkImport/attendees.xlsx
-4. **Enter the start _column_ that contains the email addresses**
-	- example: `mysheetStartCol = 3 `
-	- Enter the column number where the email addresses start:  example: column A=1, B=2, C=3, D=4 ...
-5. **Enter the start _row_ that contains the email addresses**
-	- example: `mysheetStartRow = 4 `
-	- Enter the row number where the email addresses start
-6. **Enable test mode or production**
-	- `TestOnly = yes`
-	- If "yes": only PRINT results, if "no": add found email addresses to the Spark room.
-
-
-
-  
-
-# Run script
-1. Go to the folder containing your test.py file
-2. Set the "TestOnly" parameter to "yes"
-3. Run "python test.py"
-4. The script will show the number of succesfully added users and a list of failed users
-
-
-
-
-# Other Info
-- The script will only read the _first_ sheet of an Excel workbook
-- I have only tested this with Excel 2016 (OSX) spreadsheets
-- After the script runs it will show the users that could not be added and the _number_ of succesfully added users.
-- This script uses your _personal_ access token, so it runs "as you". The personal access token may change, and could therefore break this code.
-- Users will be added as normal users, not room moderators. You can assign room moderators manually
-- Spark Developer documentation:  [here](https://developer.ciscospark.com/resource-rooms.html) 
-- "Failed users" could have several reasons (for example: already member of that room)
-
-
----------------------
+2. The script is provided as is, no warranty nor support is provided.
