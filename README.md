@@ -66,7 +66,7 @@ The BOT must be created from this page: https://developer.webex.com/my-apps/new.
 
 After having properly set the .ini file according to what just described you can re-run the script. In case of invalid or missing parameters an error message will be generated in the terminal. 
 
-# Notes:
+# Notes & Disclaimer:
 
 1. The Webex APIs implement rate-limiting; for more than 5k users the script may hit the rate-limiting that however is fully managed by the WebexTeamsSdk library; it can take about 2 mins for the script to complete, just wait! :-)
 
