@@ -1,6 +1,10 @@
 # Export Webex Teams users
 
-This script allows you as Admin of a Webex Teams Org to export the list of your users 
+This script allows you as admin of a Webex Teams Org to export the full list of your users in order to track the "Status" of each and every user account.
+
+The Status field 
+
+The 
 
 
 Export the list of the Webex Teams users in a given org with the primary goal of tracking the adoption i.e. the user account status
