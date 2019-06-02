@@ -73,8 +73,6 @@ After having properly set the .ini file according to what just described you can
 
 
 
-# Notes & Disclaimer
+# Notes
 
-1. The Webex APIs implement rate-limiting; for more than 5k users the script may hit the rate-limiting that however is fully managed by the WebexTeamsSdk library; it can take about 2 mins for the script to complete, just wait! :-)
-
-2. The script is provided as is, no warranty nor support is provided.
+The Webex APIs implement rate-limiting; for more than 5k users the script may hit the rate-limiting that however is fully managed by the WebexTeamsSdk library; it can take about 2 mins for the script to complete, just wait! :-)
